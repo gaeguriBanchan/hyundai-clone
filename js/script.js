@@ -1,3 +1,5 @@
-window.onload = function name(params) {
-  
-}
+window.onload = function () {
+  new Swiper(".swVisual", {
+    loop: true,
+  });
+};
