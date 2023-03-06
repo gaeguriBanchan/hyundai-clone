@@ -42,6 +42,71 @@ body {
   padding: 0 90px;
   margin: 0 auto;
 }
+/* 주메뉴 */
+.nav {
+  position: fixed;
+  left: 100%;
+  top: 0;
+  width: 450px;
+  height: 100vh;
+  background-color: beige;
+  z-index: 999999;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.84);
+  overflow-y: auto;
+  transition: left 0.5s ease-in-out;
+}
+.nav-active {
+  left: calc(100% - 450px) !important;
+}
+.navClose {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../images/close2.png") no-repeat center;
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+}
+.gnb {
+  position: relative;
+  display: block;
+}
+.gnb > li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+.gnb > li > a {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.9px;
+  color: #fff;
+}
+.depth2 {
+  position: relative;
+  display: block;
+  width: 180px;
+}
+.depth2 > li {
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+}
+.depth2 > li > a {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.75px;
+  color: #fff;
+}
 /* 상단 */
 .header {
   position: fixed;
